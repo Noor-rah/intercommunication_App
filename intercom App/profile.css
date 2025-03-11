@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  margin-right: 16px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.profile {
+  flex: 1;
+  text-align: center;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.profile-image {
+  position: relative;
+}
+
+.profile-image i {
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.edit-profile-image {
+  display: block;
+  margin-top: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.profile-info {
+  text-align: left;
+  margin-top: 16px;
+}
+
+.info-item {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-item label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.add-link {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.bottom-nav {
+  bottom: 0;
+  position: sticky;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.bx-home-alt {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bx-home-chat {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bx-home-layer-plus {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bx-bar-chart-alt-2 {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 400px) {
+  .container {
+    margin: 0 8px;
+  }
+
+  .profile-image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .info-item label,
+  .info-item p {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+}

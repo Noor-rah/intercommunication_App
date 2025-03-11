@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #e8d7d5;
+  color: #333;
+  padding: 10px;
+}
+
+header .back-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.back-icon a {
+  text-decoration: none;
+  color: #333;
+}
+header h1 {
+  font-size: 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.projects {
+  flex: 1;
+  padding: 10px;
+  background-color: #e8d7d5;
+  overflow-y: auto;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.project-details {
+  flex-grow: 1;
+}
+
+.project-name {
+  font-weight: bold;
+  display: block;
+}
+
+.project-subdetails {
+  color: #999;
+  font-size: 12px;
+}
+
+.project-status {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.progress-circle span {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-circle[data-progress="25"] {
+  background: conic-gradient(#4caf50 0% 25%, #f0f0f0 25% 100%);
+}
+
+.progress-circle[data-progress="50"] {
+  background: conic-gradient(#4caf50 0% 50%, #f0f0f0 50% 100%);
+}
+
+.progress-circle[data-progress="90"] {
+  background: conic-gradient(#4caf50 0% 90%, #f0f0f0 90% 100%);
+}
+
+.bottom-nav {
+  bottom: 0;
+  background-color: #fff;
+  position: sticky;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.bx-home-alt {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bx-home-chat {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bx-home-layer-plus {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bx-bar-chart-alt-2 {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* .bottom-nav {
+    bottom: 0;
+    position: sticky;
+  } */
+}

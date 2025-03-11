@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<bodys>
+    <div class="app-container">
+        <header>
+            <div class="menu-icon">&#9776;</div>
+            <h1>Projects</h1>
+            <div class="profile-icon"><a href="profile.html"><i class='bx bx-user'></i></a></div>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Projects">
+        </div>
+        <div class="tabs">
+            <button class="tab-button one" onclick="setBackground1()">Project 1</button>
+            <button class="tab-button two" onclick="setBackground2()">Project 2</button>
+            <button class="tab-button three" onclick=" setBackground3()">Project 3</button>
+        </div>
+        <div class="projects">
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 1</span>
+                    <span class="project-role">in Group name</span>
+                    <span class="project-time">2 min ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 2</span>
+                    <span class="project-role"></span>
+                    <span class="project-time">30 min ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 3</span>
+                    <span class="project-role">Project admin</span>
+                    <span class="project-time">1 hr ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 4</span>
+                    <span class="project-role">developer</span>
+                    <span class="project-time">1 hr ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 5</span>
+                    <span class="project-role"></span>
+                    <span class="project-time">6 hr ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 6</span>
+                    <span class="project-role"></span>
+                    <span class="project-time">1 day ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 7</span>
+                    <span class="project-role">developer</span>
+                    <span class="project-time">1 day ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+            <div class="project-item">
+                <i class='bx bx-user-circle'></i>
+                <div class="project-details">
+                    <span class="project-name">Collaborator 8</span>
+                    <span class="project-role"></span>
+                    <span class="project-time">3 day ago</span>
+                </div>
+                <div class="project-options">&#8942;</div>
+            </div>
+        </div>
+        <nav class="bottom-nav">
+            <a href="index.html"><i class='bx bx-home-alt'></i></a>
+            <a href="chat.html"><i class='bx bx-chat'></i></a>
+            <i class='bx bx-layer-plus'></i>
+            <a href="progress.html"><i class='bx bx-bar-chart-alt-2'></i></a>
+        </nav>
+    </div>
+    <script>
+        var a = document.querySelector(".one");
+        var b = document.querySelector(".two");
+        var c = document.querySelector(".three");
+        function setBackground1() {
+            a.style.background = "#333";
+            a.style.color = "#fff";
+            b.style.background = "#ddd";
+            b.style.color = "black";
+            c.style.background = "#ddd";
+            c.style.color = "black";
+        }
+        function setBackground2() {
+            b.style.background = "#333";
+            b.style.color = "#fff";
+            a.style.background = "#ddd";
+            a.style.color = "black";
+            c.style.background = "#ddd";
+            c.style.color = "black";
+        }
+        function setBackground3() {
+            c.style.background = "#333";
+            c.style.color = "#fff";
+            b.style.background = "#ddd";
+            b.style.color = "black";
+            a.style.background = "#ddd";
+            a.style.color = "black";
+        }
+    </script>
+</bodys>
+
+</html>
